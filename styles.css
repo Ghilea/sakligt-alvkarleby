@@ -1282,3 +1282,8 @@ button, input, textarea { font: inherit; }
 .copy-launch-button{width:100%;margin-top:14px;border:0;cursor:pointer;font:inherit}
 @media(max-width:1000px){.article-reading-grid{grid-template-columns:1fr;gap:45px}.article-summary{position:static;max-width:700px}.share-grid{grid-template-columns:1fr;gap:38px}}
 @media(max-width:760px){.launch-banner-inner{align-items:stretch;flex-direction:column;padding-block:23px}.launch-banner .button{width:100%}.article-hero{padding:108px 0 70px}.article-hero h1{font-size:clamp(3.4rem,16vw,5rem)}.article-body>p{font-size:1rem}.article-body>.article-intro{font-size:1.17rem}.article-cta,.share-copy-card{padding:26px 21px}}
+
+/* Förhandsvisning av delningsbild */
+.share-preview{margin:0 0 22px}
+.share-preview img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px 20px 4px 20px;background:var(--cream)}
+.share-preview figcaption{margin-top:8px;color:#6d7773;font-size:.76rem}
