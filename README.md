@@ -7,6 +7,7 @@ Första webbversionen för **Sakligt Älvkarleby**, ett lokalt politiskt initiat
 - Grundidé och arbetssätt
 - Tio saklighetsprinciper
 - Verifierade kommunfakta med originalkällor
+- Faktaunderlag 0.1 om skolan i Älvkarleby
 - Frågor som initiativet undersöker
 - Presentation av initiativtagaren
 - Kontakt och intresseanmälan
@@ -21,6 +22,7 @@ Alla siffror på webbplatsen ska anges med årtal och länkas till originalkäll
 
 - `index.html` – avsnittet **Älvkarleby i siffror**
 - `index.html` – avsnittet **Källor och underlag**
+- `skolan.html` – faktaunderlaget om skolan och dess versionsdatum
 - datumet för senaste faktagranskning
 
 ## Kontakt
