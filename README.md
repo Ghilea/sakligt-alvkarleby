@@ -1,1 +1,28 @@
-# sakligt-alvkarleby
+# Sakligt Älvkarleby
+
+Första webbversionen för **Sakligt Älvkarleby**, ett lokalt politiskt initiativ i uppstartsfas.
+
+## Innehåll
+
+- Grundidé och arbetssätt
+- Tio saklighetsprinciper
+- Verifierade kommunfakta med originalkällor
+- Frågor som initiativet undersöker
+- Presentation av initiativtagaren
+- Kontakt och intresseanmälan
+
+## Teknik
+
+Webbplatsen är byggd med vanlig HTML, CSS och JavaScript utan byggsteg, externa analysverktyg eller kakor. Öppna `index.html` direkt i en webbläsare för lokal förhandsvisning.
+
+## Uppdatera fakta
+
+Alla siffror på webbplatsen ska anges med årtal och länkas till originalkällan. Kontrollera särskilt:
+
+- `index.html` – avsnittet **Älvkarleby i siffror**
+- `index.html` – avsnittet **Källor och underlag**
+- datumet för senaste faktagranskning
+
+## Kontakt
+
+[sakligtalvkarleby@outlook.com](mailto:sakligtalvkarleby@outlook.com)
