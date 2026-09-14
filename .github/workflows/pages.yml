@@ -1,0 +1,34 @@
+name: Publicera webbplats
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hämta webbplatsen
+        uses: actions/checkout@v5
+      - name: Konfigurera GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Skapa webbpaket
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+      - name: Publicera
+        id: deployment
+        uses: actions/deploy-pages@v4
