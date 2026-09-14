@@ -36,3 +36,66 @@ document.addEventListener("keydown", (event) => {
 
 if (year) year.textContent = String(new Date().getFullYear());
 updateHeader();
+
+
+const interestForm = document.querySelector("[data-interest-form]");
+const messageField = interestForm?.querySelector("#message");
+const characterCount = interestForm?.querySelector("[data-character-count]");
+const mailFallback = interestForm?.querySelector("[data-mail-fallback]");
+const mailText = interestForm?.querySelector("[data-mail-text]");
+const copyMailButton = interestForm?.querySelector("[data-copy-mail]");
+const copyStatus = interestForm?.querySelector("[data-copy-status]");
+
+messageField?.addEventListener("input", () => {
+  if (characterCount) characterCount.textContent = String(messageField.value.length);
+});
+
+interestForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!interestForm.reportValidity()) return;
+
+  const data = new FormData(interestForm);
+  const name = String(data.get("name") || "").trim();
+  const email = String(data.get("email") || "").trim();
+  const connection = String(data.get("connection") || "").trim();
+  const contribution = String(data.get("contribution") || "").trim();
+  const message = String(data.get("message") || "").trim();
+
+  const subject = "Intresseanmälan – " + name;
+  const body = [
+    "Hej Sakligt Älvkarleby,",
+    "",
+    "Jag vill gärna veta mer om initiativet.",
+    "",
+    "Förnamn: " + name,
+    "E-post: " + email,
+    "Koppling till Älvkarleby: " + (connection || "Inte angivet"),
+    "Jag vill helst bidra genom: " + contribution,
+    "",
+    "Om mig och mitt intresse:",
+    message,
+    "",
+    "Vänliga hälsningar",
+    name
+  ].join("\n");
+
+  if (mailText) mailText.value = "Ämne: " + subject + "\n\n" + body;
+  if (mailFallback) mailFallback.hidden = false;
+  window.location.href =
+    "mailto:sakligtalvkarleby@outlook.com?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+});
+
+copyMailButton?.addEventListener("click", async () => {
+  if (!mailText) return;
+  try {
+    await navigator.clipboard.writeText(mailText.value);
+    if (copyStatus) copyStatus.textContent = "Texten är kopierad.";
+  } catch {
+    mailText.select();
+    document.execCommand("copy");
+    if (copyStatus) copyStatus.textContent = "Texten är markerad och kopierad.";
+  }
+});
