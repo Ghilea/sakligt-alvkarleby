@@ -1213,3 +1213,37 @@ button, input, textarea { font: inherit; }
   .interest-form { padding: 28px 20px; border-radius: 4px 28px 4px 28px; }
   .faq-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Enhetlig formulärplacering */
+.interest-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+.interest-form .form-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+.interest-form .form-row label,
+.interest-form .form-row input,
+.interest-form .form-row select,
+.interest-form .form-row textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+.interest-form .form-row label {
+  line-height: 1.4;
+}
+.interest-form .form-confirm,
+.interest-form .form-submit,
+.interest-form .form-help,
+.interest-form .mail-fallback {
+  width: 100%;
+}
+.interest-form .form-submit {
+  justify-self: stretch;
+}
