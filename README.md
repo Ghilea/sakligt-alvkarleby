@@ -9,6 +9,7 @@ Första webbversionen för **Sakligt Älvkarleby**, ett lokalt politiskt initiat
 - Verifierade kommunfakta med originalkällor
 - Faktaunderlag 0.1 om skolan i Älvkarleby
 - Intresseanmälan till den första arbetsgruppen
+- Delbar lanseringssida med färdig presentationstext
 - Frågor som initiativet undersöker
 - Presentation av initiativtagaren
 - Kontakt och intresseanmälan
@@ -25,6 +26,7 @@ Alla siffror på webbplatsen ska anges med årtal och länkas till originalkäll
 - `index.html` – avsnittet **Källor och underlag**
 - `skolan.html` – faktaunderlaget om skolan och dess versionsdatum
 - `intresse.html` – intresseanmälan som skapar ett lokalt mejlutkast
+- `aktuellt.html` – lanseringstext och kopierbar text för sociala medier
 - datumet för senaste faktagranskning
 
 ## Kontakt

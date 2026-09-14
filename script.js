@@ -99,3 +99,13 @@ copyMailButton?.addEventListener("click", async () => {
     if (copyStatus) copyStatus.textContent = "Texten är markerad och kopierad.";
   }
 });
+
+document.querySelectorAll("[data-copy-target]").forEach((button)=>{
+  button.addEventListener("click",async()=>{
+    const source=document.getElementById(button.dataset.copyTarget||"");
+    const status=document.getElementById(button.dataset.copyStatusTarget||"");
+    if(!(source instanceof HTMLTextAreaElement))return;
+    try{await navigator.clipboard.writeText(source.value);if(status)status.textContent="Texten är kopierad och redo att klistras in."}
+    catch{source.select();document.execCommand("copy");if(status)status.textContent="Texten är markerad och kopierad."}
+  });
+});
