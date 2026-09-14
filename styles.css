@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,700;0,800;1,700&display=swap');
-
 :root {
   --ink: #18201e;
   --ink-soft: #4f5a56;
@@ -24,7 +22,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--cream);
-  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -102,7 +100,7 @@ button, input, textarea { font: inherit; }
   line-height: 1;
 }
 .brand strong {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: 1.04rem;
   letter-spacing: -.03em;
 }
@@ -193,7 +191,7 @@ button, input, textarea { font: inherit; }
 .hero h1,
 .section h2 {
   margin: 0;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   letter-spacing: -.055em;
   line-height: 1.02;
 }
@@ -277,7 +275,7 @@ button, input, textarea { font: inherit; }
 }
 .hero-statement blockquote {
   margin: 0;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: clamp(1.35rem, 2.4vw, 2rem);
   font-weight: 700;
   line-height: 1.35;
@@ -375,7 +373,7 @@ button, input, textarea { font: inherit; }
   display: block;
   margin-bottom: 34px;
   color: var(--gold);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: .76rem;
   font-weight: 800;
 }
@@ -408,14 +406,14 @@ button, input, textarea { font: inherit; }
   top: 36px;
   left: 28px;
   color: var(--river);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: .78rem;
   font-weight: 800;
 }
 .principle-grid h3 {
   margin: 0 0 10px;
   color: var(--forest);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: 1.14rem;
   letter-spacing: -.02em;
 }
@@ -438,7 +436,7 @@ button, input, textarea { font: inherit; }
 .fact-value {
   margin: 0;
   color: var(--river);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: clamp(2.35rem, 4vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -.06em;
@@ -489,7 +487,7 @@ button, input, textarea { font: inherit; }
 }
 .question-number {
   color: var(--river);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: .82rem;
   font-weight: 800;
 }
@@ -516,7 +514,7 @@ button, input, textarea { font: inherit; }
 .question-list h3 {
   margin: 0 0 10px;
   color: var(--forest);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: 1.55rem;
   letter-spacing: -.035em;
 }
@@ -556,7 +554,7 @@ button, input, textarea { font: inherit; }
     linear-gradient(145deg, rgba(255,255,255,.08), transparent),
     var(--forest);
   border-radius: 6px 60px 6px 60px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: 4rem;
   font-weight: 800;
   letter-spacing: -.08em;
@@ -585,7 +583,7 @@ button, input, textarea { font: inherit; }
 .join-card h3 {
   margin: 0 0 16px;
   color: var(--forest);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-size: 1.35rem;
 }
 .join-card ul { margin: 0 0 26px; padding-left: 20px; color: var(--ink-soft); }
@@ -617,7 +615,7 @@ button, input, textarea { font: inherit; }
 }
 .source-list li > span {
   color: var(--river);
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
   font-weight: 800;
 }
 .source-list h3 { margin: 0 0 4px; color: var(--forest); font-size: 1rem; }
