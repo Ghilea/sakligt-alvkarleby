@@ -10,6 +10,7 @@ Första webbversionen för **Sakligt Älvkarleby**, ett lokalt politiskt initiat
 - Faktaunderlag 0.1 om skolan i Älvkarleby
 - Intresseanmälan till den första arbetsgruppen
 - Delbar lanseringssida med färdig presentationstext
+- Facebook-profilbild och omslagsbild
 - Frågor som initiativet undersöker
 - Presentation av initiativtagaren
 - Kontakt och intresseanmälan
@@ -26,7 +27,9 @@ Alla siffror på webbplatsen ska anges med årtal och länkas till originalkäll
 - `index.html` – avsnittet **Källor och underlag**
 - `skolan.html` – faktaunderlaget om skolan och dess versionsdatum
 - `intresse.html` – intresseanmälan som skapar ett lokalt mejlutkast
-- `aktuellt.html` – lanseringstext och kopierbar text för sociala medier
+- `aktuellt.html` – lanseringstext, kopierbar text och Facebook-startpaket
+- `assets/facebook-profil-sakligt-alvkarleby.png` – kvadratisk profilbild
+- `assets/facebook-omslag-sakligt-alvkarleby.png` – bred omslagsbild
 - datumet för senaste faktagranskning
 
 ## Kontakt

@@ -1287,3 +1287,19 @@ button, input, textarea { font: inherit; }
 .share-preview{margin:0 0 22px}
 .share-preview img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px 20px 4px 20px;background:var(--cream)}
 .share-preview figcaption{margin-top:8px;color:#6d7773;font-size:.76rem}
+
+/* Facebook-startpaket */
+.facebook-kit{margin-top:80px;padding-top:70px;border-top:1px solid var(--line)}
+.facebook-kit-heading{max-width:760px;margin-bottom:34px}
+.facebook-kit-heading h2{margin:0;color:var(--forest-deep);font-family:"Arial","Helvetica Neue",sans-serif;font-size:clamp(2.3rem,5vw,3.8rem);letter-spacing:-.05em;line-height:1.04}
+.facebook-kit-heading>p:last-child{max-width:680px;margin:18px 0 0;color:var(--ink-soft)}
+.facebook-assets{display:grid;grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);gap:18px}
+.facebook-asset-card{display:grid;grid-template-columns:180px 1fr;gap:25px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:5px 30px 5px 30px;background:#fff}
+.facebook-asset-card img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:50%;background:var(--cream)}
+.facebook-cover-card{grid-template-columns:minmax(240px,1.1fr) minmax(190px,.9fr)}
+.facebook-cover-card img{border-radius:4px 18px 4px 18px}
+.facebook-asset-card h3{margin:0 0 6px;color:var(--forest);font-size:1.15rem}
+.facebook-asset-card p{margin:0 0 16px;color:var(--ink-soft);font-size:.82rem}
+.facebook-asset-card .button{width:100%;min-height:44px;padding:10px 15px;color:var(--forest);font-size:.78rem}
+@media(max-width:1000px){.facebook-assets{grid-template-columns:1fr}.facebook-asset-card{grid-template-columns:170px 1fr}.facebook-cover-card{grid-template-columns:minmax(220px,1fr) 1fr}}
+@media(max-width:620px){.facebook-kit{margin-top:58px;padding-top:52px}.facebook-asset-card,.facebook-cover-card{grid-template-columns:1fr}.facebook-asset-card img{max-width:220px;margin-inline:auto}.facebook-cover-card img{max-width:none}}
